@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Язык алгебры · Математика ESO</title>
+<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body data-page="topic" data-topic="algebra">
+<main id="content" class="wrap">
+
+<section class="lesson">
+  <p class="kicker">Урок 1 · ESO 1–2</p>
+  <h2>Буква вместо числа</h2>
+  <p>Цена одного билета неизвестна, но билетов три, и ещё 2 евро за сервис. Всю сумму можно записать, не зная цены: 3 · x + 2. Буква x — это <b class="term">неизвестное <i>incógnita / incògnita</i></b> или просто переменная, <b>variable</b>. Такой язык называют <b class="term">алгеброй <i>álgebra / àlgebra</i></b>.</p>
+  <p>Буква не «не число». Это число, которое пока не сказали. Если x = 10, то 3x + 2 = 32. Если x = 4, то 3 · 4 + 2 = 14. Точку между числом и буквой обычно не пишут: 3x значит 3 · x.</p>
+  <div class="note idea"><b>Почему это полезно.</b> Одна запись описывает все цены сразу. Не надо решать задачу заново для каждого числа: подставил и получил.</div>
+  <div class="check">
+    <h3>Проверь себя</h3>
+    <script type="application/json">
+[
+  {"type":"number","q":"Чему равно 3x + 2, если x = 5?","answer":"17","hint":"3 · 5 + 2. Умножение раньше сложения.","solution":"15 + 2 = 17."},
+  {"type":"number","q":"Чему равно 10 − x, если x = 4?","answer":"6","hint":"Подставь четвёрку.","solution":"6."},
+  {"type":"tf","q":"Запись 2x означает 2 + x.","answer":false,"hint":"Буква рядом с числом — умножение.","solution":"Нет, 2x = 2 · x."}
+]
+    </script>
+  </div>
+</section>
+
+<section class="lesson">
+  <p class="kicker">Урок 2</p>
+  <h2>Слова превращаются в выражение</h2>
+  <p>В тетради это называют <b class="term">алгебраический язык <i>lenguaje algebraico / llenguatge algebraic</i></b>. Переводят фразу кусками.</p>
+  <ul>
+    <li>«число» — x;</li>
+    <li>«на 3 больше, чем число» — x + 3;</li>
+    <li>«на 3 меньше, чем число» — x − 3;</li>
+    <li>«в 3 раза больше» — 3x;</li>
+    <li>«половина числа» — x/2;</li>
+    <li>«квадрат числа» — x²;</li>
+    <li>«последующее» (следующее целое) — x + 1, «предыдущее» — x − 1.</li>
+  </ul>
+  <div class="note watch"><b>«На 3 больше» и «в 3 раза больше» — разные фразы.</b> Первая — сложение, вторая — умножение. По-испански: «tres más que» и «el triple de» или «tres veces».</div>
+  <div class="check">
+    <h3>Проверь себя</h3>
+    <script type="application/json">
+[
+  {"type":"choice","q":"«На 5 меньше, чем x» — это…","options":["5x","x − 5","x + 5","5 − x"],"answer":1,"hint":"Меньше, чем x, значит из x вычитают 5.","solution":"x − 5. Запись 5 − x означает «на сколько 5 больше x», это другое выражение."},
+  {"type":"choice","q":"«Удвоенное число и ещё 1» — это…","options":["x + 2 + 1","2x + 1","x² + 1","2 + x"],"answer":1,"hint":"Удвоенное — 2x. «И ещё» — плюс.","solution":"2x + 1."},
+  {"type":"number","q":"Если «половина числа» равна 6, какое было число?","answer":"12","hint":"x/2 = 6.","solution":"12."}
+]
+    </script>
+  </div>
+</section>
+
+<section class="lesson">
+  <p class="kicker">Урок 3</p>
+  <h2>Одночлены</h2>
+  <p>Кусок без плюсов и минусов между разными частями, вроде 5x², называют <b class="term">одночленом <i>monomio / monomi</i></b>. В нём есть <b class="term">коэффициент <i>coeficiente</i></b> — число спереди, здесь 5. Есть буквенная часть x². Степень одночлена — показатель буквы, здесь 2. У 7x степень 1. У просто числа 4, его называют свободным, степень 0: буквы нет.</p>
+  <p>Одночлены <b class="term">подобные <i>semejantes</i></b>, если у них одинаковая буквенная часть: 3x и 8x подобные, 3x и 3x² — нет, потому что степени разные. 3x и 3y — тоже нет, буквы разные.</p>
+  <div class="check">
+    <h3>Проверь себя</h3>
+    <script type="application/json">
+[
+  {"type":"number","q":"Какой коэффициент у одночлена 6x²?","answer":"6","hint":"Число спереди.","solution":"6."},
+  {"type":"choice","q":"Какая пара подобная?","options":["2x и 2x²","5a и 3a","5a и 5b","x и 1"],"answer":1,"hint":"Одинаковая буква и одинаковая степень.","solution":"5a и 3a. У первой пары степени 1 и 2. У третьей разные буквы."},
+  {"type":"number","q":"Какова степень одночлена 4x³?","answer":"3","hint":"Смотри показатель, не коэффициент.","solution":"3."}
+]
+    </script>
+  </div>
+</section>
+
+<section class="lesson">
+  <p class="kicker">Урок 4</p>
+  <h2>Сложение подобных</h2>
+  <p>3x + 5x — это восемь иксов, 8x. Коэффициенты складывают, буква остаётся. Нельзя сложить 3x + 5 и получить 8x: яблоки с коробками не складывают. 5 без буквы — отдельный карман.</p>
+  <div class="steps">
+    <div class="step"><span class="tag">Пример</span><p>Упрости 4x + 3 + 2x − 1.</p></div>
+    <div class="step"><span class="tag">По карманам</span><p>С иксом: 4x + 2x = 6x. Без икса: 3 − 1 = 2.</p></div>
+    <div class="step"><span class="tag">Ответ</span><p>6x + 2. Дальше не склеивается.</p></div>
+  </div>
+  <p>Минус перед одночленом относится к его коэффициенту. 7x − 2x = 5x. 2x − 7x = −5x. Знак пишут перед всем одночленом.</p>
+  <div class="check">
+    <h3>Проверь себя</h3>
+    <script type="application/json">
+[
+  {"type":"number","q":"Коэффициент суммы 3x + 4x. Напиши число перед x.","answer":"7","hint":"3 + 4.","solution":"7x, коэффициент 7."},
+  {"type":"choice","q":"Чему равно 5x + 2 + x?","options":["8x","6x + 2","7x","5x + 3"],"answer":1,"hint":"5x и x — подобные. 2 остаётся отдельно.","solution":"6x + 2."},
+  {"type":"number","q":"Коэффициент у x в выражении 2x − 9x. Он может быть отрицательным.","answer":"-7","hint":"2 − 9.","solution":"−7x."}
+]
+    </script>
+  </div>
+</section>
+
+<section class="lesson">
+  <p class="kicker">Урок 5</p>
+  <h2>Многочлен и умножение одночленов</h2>
+  <p>Сумма нескольких одночленов — <b class="term">многочлен <i>polinomio / polinomi</i></b>. Например 2x² − 5x + 1. Два слагаемых — бином, <b>binomio</b>, три — трином, <b>trinomio</b>.</p>
+  <p>Одночлены умножают так: коэффициенты отдельно, буквы отдельно. 3x · 4x = 12 x², потому что x · x = x². 2x · 5y = 10xy. Если буквы разные, их просто пишут рядом.</p>
+  <div class="formula">xᵐ · xⁿ = xᵐ⁺ⁿ</div>
+  <p>Степени одной буквы при умножении складываются. x² · x³ = x⁵. Это то же правило, что в теме про степени.</p>
+  <p class="remind">Если степени ещё шаткие: <a href="potencias.html">степени и корни</a>.</p>
+  <div class="check">
+    <h3>Проверь себя</h3>
+    <script type="application/json">
+[
+  {"type":"number","q":"Какой показатель у x в произведении x² · x³?","answer":"5","hint":"Показатели складываются.","solution":"x⁵, показатель 5."},
+  {"type":"number","q":"Коэффициент произведения 3x · 4x.","answer":"12","hint":"3 · 4, и x · x = x².","solution":"12."},
+  {"type":"choice","q":"2x · 5y равно…","options":["10xy","7xy","10x","2x + 5y"],"answer":0,"hint":"Числа перемножь, буквы оставь обе.","solution":"10xy."}
+]
+    </script>
+  </div>
+</section>
+
+<section class="lesson">
+  <p class="kicker">Урок 6</p>
+  <h2>Скобка и квадрат суммы</h2>
+  <p>Чтобы умножить одночлен на скобку, его раздают каждому слагаемому. Это распределительное свойство: 3(x + 2) = 3x + 6. Минус перед скобкой меняет каждый знак внутри: −(x − 4) = −x + 4.</p>
+  <div class="steps">
+    <div class="step"><span class="tag">Пример</span><p>2x(x − 3).</p></div>
+    <div class="step"><span class="tag">Раздача</span><p>2x · x = 2x². 2x · (−3) = −6x.</p></div>
+    <div class="step"><span class="tag">Ответ</span><p>2x² − 6x.</p></div>
+  </div>
+  <p>Квадрат суммы раскрывают как скобку на скобку, но в 2º ESO часто дают готовое равенство и просят понять, откуда оно:</p>
+  <div class="formula">(a + b)² = a² + 2ab + b²</div>
+  <p>(x + 3)² — это не x² + 9. Не хватает удвоенного произведения: x² + 6x + 9. Проверка подстановкой: если x = 1, слева 16, справа x² + 9 = 10, не сошлось. С полной формулой 1 + 6 + 9 = 16.</p>
+  <div class="check">
+    <h3>Проверь себя</h3>
+    <script type="application/json">
+[
+  {"type":"number","q":"Чему равно 4(x + 1) при x = 2? Сначала можно раскрыть или сразу подставить.","answer":"12","hint":"4 · (2 + 1) = 4 · 3.","solution":"12."},
+  {"type":"choice","q":"(x + 1)² равно…","options":["x² + 1","x² + 2x + 1","x² + 2 + 1","2x²"],"answer":1,"hint":"Квадрат суммы: a² + 2ab + b². Здесь b = 1.","solution":"x² + 2x + 1."},
+  {"type":"number","q":"Коэффициент при x в многочлене −(2x − 6) после раскрытия скобки. Он может быть отрицательным.","answer":"-2","hint":"Минус меняет оба знака: −2x + 6.","solution":"−2."}
+]
+    </script>
+  </div>
+</section>
+
+<section class="lesson">
+  <p class="kicker">Итог темы</p>
+  <h2>Ловушки и большой тест</h2>
+  <div class="trap"><p class="wrong"><span class="lbl">Так неправильно</span>3x + 2x = 5x²</p><p class="right"><span class="lbl">Так правильно</span>3x + 2x = 5x</p><p>При сложении подобных степень не растёт. Растёт она при умножении.</p></div>
+  <div class="trap"><p class="wrong"><span class="lbl">Так неправильно</span>(x + 2)² = x² + 4</p><p class="right"><span class="lbl">Так правильно</span>x² + 4x + 4</p></div>
+  <div class="trap"><p class="wrong"><span class="lbl">Так неправильно</span>«на 4 больше» записали как 4x</p><p class="right"><span class="lbl">Так правильно</span>x + 4. А 4x — это «в 4 раза больше»</p></div>
+  <details class="parents">
+    <summary>Для родителей</summary>
+    <p>Слова: expresión algebraica, monomio, polinomio, coeficiente, semejantes, incógnita. Валенсийский: expressió algebraica, monomi, polinomi, coeficient, semblants, incògnita.</p>
+    <p>Не требуйте «решить», если в задаче написано simplificar или expresa en lenguaje algebraico. Упростить — собрать подобные. Выразить — перевести фразу. Решить, resolver, — это уже уравнение, следующая тема, когда есть знак равенства.</p>
+  </details>
+  <div class="check" data-mode="step" data-save="final">
+    <h3>Проверь себя: 8 вопросов</h3>
+    <script type="application/json">
+[
+  {"type":"number","q":"2x + 1 при x = 6.","answer":"13","hint":"12 + 1.","solution":"13."},
+  {"type":"choice","q":"«В 5 раз больше, чем x» — это…","options":["x + 5","5x","x − 5","x/5"],"answer":1,"hint":"«В разы» — умножение.","solution":"5x."},
+  {"type":"number","q":"Коэффициент суммы 7a − 2a.","answer":"5","hint":"7 − 2.","solution":"5."},
+  {"type":"choice","q":"x · x² равно…","options":["x²","x³","2x","x"],"answer":1,"hint":"Показатели 1 + 2.","solution":"x³."},
+  {"type":"number","q":"3(x − 1) при x = 4.","answer":"9","hint":"3 · 3.","solution":"9."},
+  {"type":"choice","q":"Что нельзя сложить в один одночлен?","options":["2x и 5x","x² и 4x²","3x и 3","−a и 2a"],"answer":2,"hint":"Подобны только одинаковые буквы и степени.","solution":"3x и 3. У тройки нет икса."},
+  {"type":"number","q":"(x + 2)² при x = 1.","answer":"9","hint":"Сначала скобка: 3². Не 1 + 4.","solution":"9."},
+  {"type":"tf","q":"2x + 3x = 6x.","answer":false,"hint":"Коэффициенты складывают, не перемножают.","solution":"Неверно, сумма 5x. 6x было бы произведением 2x · 3, и то не совсем: 2x · 3 = 6x, да, но здесь плюс."}
+]
+    </script>
+  </div>
+</section>
+
+</main>
+<script src="../assets/js/topics.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/quiz.js"></script>
+<script src="../assets/js/lessons.js"></script>
+</body>
+</html>

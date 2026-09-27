@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Входной тест · Математика ESO</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="diag">
+<main class="wrap">
+  <p class="kicker">С чего начать</p>
+  <h1>Входной тест</h1>
+  <p>По два коротких вопроса на каждую тему. Не надо готовиться. Если ответ не пришёл сразу, тема попадёт в список повторения. Это карта пробелов, не оценка.</p>
+  <div class="check" data-mode="diag">
+    <script type="application/json">
+[
+  {"type":"number","topic":"multiplicacion","q":"7 · 8 = ?","answer":"56","hint":"7 · 4 = 28, удвой.","solution":"56."},
+  {"type":"number","topic":"multiplicacion","q":"20 · 30 = ?","answer":"600","hint":"2 · 3 = 6 и два нуля.","solution":"600."},
+  {"type":"number","topic":"division","q":"72 : 8 = ?","answer":"9","hint":"8 · 9 = 72.","solution":"9."},
+  {"type":"number","topic":"division","q":"612 : 3 = ?","answer":"204","hint":"Не потеряй ноль в середине.","solution":"204."},
+  {"type":"number","topic":"naturales","q":"2 + 3 · 4 = ?","answer":"14","hint":"Сначала умножение.","solution":"2 + 12 = 14."},
+  {"type":"number","topic":"naturales","q":"10 − 3 + 2 = ?","answer":"9","hint":"Слева направо.","solution":"7 + 2 = 9."},
+  {"type":"number","topic":"potencias","q":"8² = ?","answer":"64","hint":"8 · 8, не 16.","solution":"64."},
+  {"type":"number","topic":"potencias","q":"√81 = ?","answer":"9","hint":"9 · 9 = 81.","solution":"9."},
+  {"type":"number","topic":"divisibilidad","q":"m.c.d.(12, 18), наибольший общий делитель.","answer":"6","hint":"Общие делители: 1, 2, 3, 6.","solution":"6."},
+  {"type":"number","topic":"divisibilidad","q":"m.c.m.(4, 6), наименьшее общее кратное.","answer":"12","hint":"Самое маленькое число, которое делится и на 4, и на 6.","solution":"12."},
+  {"type":"number","topic":"enteros","q":"(−3) + (−5) = ?","answer":"-8","hint":"Оба шага влево.","solution":"−8."},
+  {"type":"number","topic":"enteros","q":"(−4) · (−2) = ?","answer":"8","hint":"Одинаковые знаки дают плюс.","solution":"8."},
+  {"type":"choice","topic":"fracciones","q":"1/2 + 1/4 = ?","options":["2/6","3/4","1/4","2/4"],"answer":1,"hint":"1/2 = 2/4. Потом 2/4 + 1/4.","solution":"3/4."},
+  {"type":"number","topic":"fracciones","q":"3/4 от 20.","answer":"15","hint":"20 : 4 = 5, умножь на 3.","solution":"15."},
+  {"type":"choice","topic":"decimales","q":"Какое число больше?","options":["0,8","0,75","они равны","0,09"],"answer":0,"hint":"0,8 = 0,80.","solution":"0,8."},
+  {"type":"number","topic":"decimales","q":"1,2 · 0,3 = ?","answer":["0.36","0,36"],"hint":"12 · 3 = 36, знаков после запятой два.","solution":"0,36."},
+  {"type":"number","topic":"proporcionalidad","q":"2 кг стоят 6 евро. Сколько стоят 4 кг?","answer":"12","hint":"Килограммов вдвое больше.","solution":"12."},
+  {"type":"number","topic":"proporcionalidad","q":"20% от 50.","answer":"10","hint":"10% — это 5, 20% — вдвое больше.","solution":"10."},
+  {"type":"number","topic":"medida","q":"3 м в сантиметрах.","answer":"300","hint":"1 м = 100 см.","solution":"300."},
+  {"type":"tf","topic":"medida","q":"1 м² = 100 см².","answer":false,"hint":"Сторона квадрата 100 см, площадь 100 · 100.","solution":"Неверно. 1 м² = 10 000 см²."},
+  {"type":"number","topic":"algebra","q":"Коэффициент суммы 3x + 2x.","answer":"5","hint":"Подобные складывают коэффициенты.","solution":"5x, коэффициент 5."},
+  {"type":"choice","topic":"algebra","q":"«В 4 раза больше, чем x» — это…","options":["x + 4","4x","x − 4","4 + 4"],"answer":1,"hint":"«В разы» — умножение.","solution":"4x."},
+  {"type":"number","topic":"ecuaciones","q":"3x = 15. Чему равен x?","answer":"5","hint":"Раздели на 3.","solution":"5."},
+  {"type":"number","topic":"ecuaciones","q":"x + 6 = 2. Чему равен x?","answer":"-4","hint":"x = 2 − 6.","solution":"−4."},
+  {"type":"number","topic":"angulos","q":"Сколько градусов в прямом угле?","answer":"90","hint":"Угол комнаты.","solution":"90."},
+  {"type":"number","topic":"angulos","q":"В треугольнике углы 50° и 60°. Третий?","answer":"70","hint":"Сумма 180.","solution":"70."},
+  {"type":"choice","topic":"triangulos","q":"Гипотенуза — это…","options":["любая сторона","сторона напротив прямого угла","самая короткая сторона","высота"],"answer":1,"hint":"Сначала найди угол 90°.","solution":"Сторона напротив прямого угла."},
+  {"type":"tf","topic":"triangulos","q":"Стороны 2, 3 и 6 могут образовать треугольник.","answer":false,"hint":"2 + 3 = 5, это меньше 6.","solution":"Не могут."},
+  {"type":"number","topic":"areas","q":"Площадь треугольника с основанием 10 и высотой 4.","answer":"20","hint":"Половина произведения.","solution":"(10 · 4) / 2 = 20."},
+  {"type":"number","topic":"areas","q":"Площадь квадрата со стороной 5.","answer":"25","hint":"5².","solution":"25."},
+  {"type":"number","topic":"pitagoras","q":"Катеты 6 и 8. Гипотенуза?","answer":"10","hint":"36 + 64 = 100.","solution":"10."},
+  {"type":"number","topic":"pitagoras","q":"Гипотенуза 13, катет 5. Второй катет?","answer":"12","hint":"169 − 25 = 144.","solution":"12."},
+  {"type":"number","topic":"semejanza","q":"Коэффициент подобия 3. Сторона 4 становится равна…","answer":"12","hint":"Умножь длину на 3.","solution":"12."},
+  {"type":"number","topic":"semejanza","q":"Стороны увеличили в 3 раза. Во сколько раз выросла площадь?","answer":"9","hint":"Площадь умножается на квадрат коэффициента.","solution":"9."},
+  {"type":"number","topic":"volumen","q":"Объём куба с ребром 3.","answer":"27","hint":"3³.","solution":"27."},
+  {"type":"tf","topic":"volumen","q":"Объём пирамиды равен площади основания, умноженной на высоту, без деления.","answer":false,"hint":"Пирамида — треть призмы.","solution":"Неверно. Нужно разделить на 3."},
+  {"type":"choice","topic":"funciones","q":"В точке (2, 5) вертикальная координата равна…","options":["2","5","7","0"],"answer":1,"hint":"Второе число — это y.","solution":"5."},
+  {"type":"number","topic":"funciones","q":"y = 2x + 1 при x = 3.","answer":"7","hint":"6 + 1.","solution":"7."},
+  {"type":"number","topic":"estadistica","q":"Среднее чисел 2, 4 и 6.","answer":"4","hint":"Сумма 12, три числа.","solution":"4."},
+  {"type":"number","topic":"estadistica","q":"Мода набора 1, 1, 2, 3.","answer":"1","hint":"Что встречается чаще.","solution":"1."},
+  {"type":"choice","topic":"probabilidad","q":"Вероятность орла на честной монете.","options":["1/6","1/2","1/4","1"],"answer":1,"hint":"Две стороны, одна из них орёл.","solution":"1/2."},
+  {"type":"number","topic":"probabilidad","q":"Сколько граней кости дают число больше 4?","answer":"2","hint":"5 и 6.","solution":"2. Вероятность 2/6."}
+]
+    </script>
+  </div>
+</main>
+<script src="assets/js/topics.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/quiz.js"></script>
+</body>
+</html>

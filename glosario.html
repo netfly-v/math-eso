@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Словарь · Математика ESO</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="glosario">
+<main class="wrap">
+  <p class="kicker">Русский / español / valencià</p>
+  <h1>Словарь</h1>
+  <p>Слова, которые встречаются в тетради. Можно искать по-русски или по-испански.</p>
+  <input class="search" id="q" placeholder="Например: дробь или fracción" aria-label="Поиск по словарю">
+  <div id="list" class="cards"></div>
+</main>
+<script src="assets/js/topics.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+var WORDS = [
+  ["умножение","multiplicación","multiplicació","multiplicacion"],
+  ["деление","división","divisió","division"],
+  ["делимое","dividendo","dividend","division"],
+  ["делитель","divisor","divisor","division"],
+  ["частное","cociente","quocient","division"],
+  ["остаток","resto","resta","division"],
+  ["слагаемое","sumando","sumand","naturales"],
+  ["порядок действий","jerarquía de operaciones","jerarquia d'operacions","naturales"],
+  ["степень","potencia","potència","potencias"],
+  ["основание","base","base","potencias"],
+  ["показатель","exponente","exponent","potencias"],
+  ["квадрат числа","al cuadrado","al quadrat","potencias"],
+  ["квадратный корень","raíz cuadrada","arrel quadrada","potencias"],
+  ["кратное","múltiplo","múltiple","divisibilidad"],
+  ["наибольший общий делитель","máximo común divisor, m.c.d.","màxim comú divisor","divisibilidad"],
+  ["наименьшее общее кратное","mínimo común múltiplo, m.c.m.","mínim comú múltiple","divisibilidad"],
+  ["простое число","número primo","nombre primer","divisibilidad"],
+  ["целое число","número entero","nombre enter","enteros"],
+  ["отрицательное","negativo","negatiu","enteros"],
+  ["модуль","valor absoluto","valor absolut","enteros"],
+  ["дробь","fracción","fracció","fracciones"],
+  ["числитель","numerador","numerador","fracciones"],
+  ["знаменатель","denominador","denominador","fracciones"],
+  ["сократить","simplificar","simplificar","fracciones"],
+  ["десятичная дробь","número decimal","nombre decimal","decimales"],
+  ["десятые","décimas","dècimes","decimales"],
+  ["пропорция","proporción","proporció","proporcionalidad"],
+  ["правило трёх","regla de tres","regla de tres","proporcionalidad"],
+  ["процент","porcentaje","percentatge","proporcionalidad"],
+  ["скидка","descuento","descompte","proporcionalidad"],
+  ["метр","metro","metre","medida"],
+  ["квадратный метр","metro cuadrado","metre quadrat","medida"],
+  ["неизвестное","incógnita","incògnita","algebra"],
+  ["одночлен","monomio","monomi","algebra"],
+  ["многочлен","polinomio","polinomi","algebra"],
+  ["коэффициент","coeficiente","coeficient","algebra"],
+  ["уравнение","ecuación","equació","ecuaciones"],
+  ["решение","solución","solució","ecuaciones"],
+  ["прямая","recta","recta","angulos"],
+  ["отрезок","segmento","segment","angulos"],
+  ["луч","semirrecta","semirecta","angulos"],
+  ["угол","ángulo","angle","angulos"],
+  ["прямой угол","ángulo recto","angle recte","angulos"],
+  ["острый угол","ángulo agudo","angle agut","angulos"],
+  ["тупой угол","ángulo obtuso","angle obtús","angulos"],
+  ["параллельные","paralelas","paral·leles","angulos"],
+  ["треугольник","triángulo","triangle","triangulos"],
+  ["равносторонний","equilátero","equilàter","triangulos"],
+  ["равнобедренный","isósceles","isòsceles","triangulos"],
+  ["катет","cateto","catet","pitagoras"],
+  ["гипотенуза","hipotenusa","hipotenusa","pitagoras"],
+  ["высота","altura","altura","triangulos"],
+  ["периметр","perímetro","perímetre","areas"],
+  ["площадь","área","àrea","areas"],
+  ["окружность","circunferencia","circumferència","triangulos"],
+  ["круг","círculo","cercle","areas"],
+  ["радиус","radio","radi","triangulos"],
+  ["диаметр","diámetro","diàmetre","triangulos"],
+  ["теорема Пифагора","teorema de Pitágoras","teorema de Pitàgores","pitagoras"],
+  ["подобие","semejanza","semblança","semejanza"],
+  ["теорема Фалеса","teorema de Tales","teorema de Tales","semejanza"],
+  ["масштаб","escala","escala","semejanza"],
+  ["объём","volumen","volum","volumen"],
+  ["куб","cubo","cub","volumen"],
+  ["цилиндр","cilindro","cilindre","volumen"],
+  ["конус","cono","con","volumen"],
+  ["пирамида","pirámide","piràmide","volumen"],
+  ["шар","esfera","esfera","volumen"],
+  ["координаты","coordenadas","coordenades","funciones"],
+  ["график","gráfica","gràfica","funciones"],
+  ["функция","función","funció","funciones"],
+  ["частота","frecuencia","freqüència","estadistica"],
+  ["среднее","media","mitjana","estadistica"],
+  ["медиана","mediana","mediana","estadistica"],
+  ["мода","moda","moda","estadistica"],
+  ["вероятность","probabilidad","probabilitat","probabilidad"],
+  ["достоверное","seguro","segur","probabilidad"],
+  ["невозможное","imposible","impossible","probabilidad"]
+];
+var list = document.getElementById("list");
+var input = document.getElementById("q");
+function draw() {
+  var needle = input.value.trim().toLowerCase();
+  list.innerHTML = "";
+  WORDS.forEach(function (w) {
+    var blob = (w[0] + " " + w[1] + " " + w[2]).toLowerCase();
+    if (needle && blob.indexOf(needle) < 0) return;
+    var a = document.createElement("a");
+    a.className = "card";
+    a.href = "temas/" + w[3] + ".html";
+    a.innerHTML = "<strong>" + w[0] + "</strong><span>" + w[1] + "</span><small>" + w[2] + "</small>";
+    list.appendChild(a);
+  });
+}
+input.addEventListener("input", draw);
+draw();
+</script>
+</body>
+</html>

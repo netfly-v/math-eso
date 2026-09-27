@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Целые числа · Математика ESO</title>
+<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body data-page="topic" data-topic="enteros">
+<main id="content" class="wrap">
+
+<section class="lesson">
+  <p class="kicker">Урок 1 · ESO 1–2</p>
+  <h2>Числа меньше нуля</h2>
+  <p>Термометр показывает 3 градуса мороза. Это не «минус как действие вычитания», это положение ниже нуля. Такие числа называют <b class="term">отрицательными <i>negativos</i></b>. Вместе с нулём и натуральными они составляют <b class="term">целые числа <i>números enteros / nombres enters</i></b>: … −3, −2, −1, 0, 1, 2, 3, …</p>
+  <p>На прямой отрицательные стоят левее нуля. Чем левее, тем меньше. −5 меньше, чем −1, хотя 5 больше 1. Долг в 5 евро хуже долга в 1 евро.</p>
+  <p>Знак «−» перед числом — это часть числа, <b class="term">знак <i>signo</i></b>. Модуль, <b class="term">valor absoluto</i>, — расстояние до нуля без знака. У −5 и у 5 модуль один: 5. Пишут |−5| = 5. Модуль отвечает на «как далеко от нуля», а не на «в какую сторону».</p>
+  <div class="check">
+    <h3>Проверь себя</h3>
+    <script type="application/json">
+[
+  {"type":"choice","q":"Какое число меньше?","options":["−1","−4","0","2"],"answer":1,"hint":"Левее на прямой — меньше. −4 левее −1.","solution":"−4."},
+  {"type":"number","q":"Чему равен модуль числа −8?","answer":"8","hint":"Расстояние до нуля, без знака.","solution":"8."},
+  {"type":"tf","q":"−2 больше, чем −10.","answer":true,"hint":"−2 ближе к нулю справа от −10.","solution":"Да. Минус два теплее, чем минус десять."}
+]
+    </script>
+  </div>
+</section>
+
+<section class="lesson">
+  <p class="kicker">Урок 2</p>
+  <h2>Сложение целых</h2>
+  <p>Складывать целые удобно как шаги по прямой. Плюс — шаг вправо, минус — шаг влево. Начало — первое число.</p>
+  <div class="steps">
+    <div class="step"><span class="tag">Одинаковые знаки</span><p>(−3) + (−5). Оба шага влево. Вместе 8 шагов влево: −8. Модули сложили, знак оставили общий.</p></div>
+    <div class="step"><span class="tag">Разные знаки</span><p>(−7) + 4. Семь влево, четыре вправо. Осталось 3 влево: −3. Из большего модуля вычли меньший и взяли знак большего модуля.</p></div>
+  </div>
+  <div class="formula">одинаковые знаки: складываем модули<br>разные знаки: вычитаем модули, знак у того, чей модуль больше</div>
+  <p>Ноль — особый: 5 + (−5) = 0. Такие числа называют противоположными, <b>opuestos</b>. Они стирают друг друга.</p>
+  <div class="check">
+    <h3>Проверь себя</h3>
+    <script type="application/json">
+[
+  {"type":"number","q":"(−4) + (−6) = ?","answer":"-10","hint":"Оба влево, модули складываются.","solution":"−10."},
+  {"type":"number","q":"(−9) + 2 = ?","answer":"-7","hint":"Модули 9 и 2, вычитаем, знак минуса, потому что 9 больше.","solution":"−7."},
+  {"type":"number","q":"6 + (−6) = ?","answer":"0","hint":"Противоположные числа.","solution":"0."}
+]
+    </script>
+  </div>
+</section>
+
+<section class="lesson">
+  <p class="kicker">Урок 3</p>
+  <h2>Вычитание — это прибавить противоположное</h2>
+  <p>Вычесть число — всё равно что прибавить ему противоположное. 5 − (−2) значит «убрать долг 2», то есть стать богаче на 2: 5 + 2 = 7.</p>
+  <div class="formula">a − b = a + (−b)<br>a − (−b) = a + b</div>
+  <div class="steps">
+    <div class="step"><span class="tag">Пример</span><p>−3 − 4.</p></div>
+    <div class="step"><span class="tag">Перевод</span><p>Это −3 + (−4). Два шага влево: −7.</p></div>
+    <div class="step"><span class="tag">Другой пример</span><p>−3 − (−4) = −3 + 4 = 1.</p></div>
+  </div>
+  <div class="note watch"><b>Два минуса подряд не всегда дают плюс.</b> Плюс получается, когда минус стоит перед скобкой с минусом: минус на минус. В записи −3 − 4 второй минус — это вычитание положительной четвёрки, ответ отрицательный.</div>
+  <div class="check">
+    <h3>Проверь себя</h3>
+    <script type="application/json">
+[
+  {"type":"number","q":"5 − (−2) = ?","answer":"7","hint":"Вычесть минус два — значит прибавить два.","solution":"7."},
+  {"type":"number","q":"−3 − 4 = ?","answer":"-7","hint":"Оба движения в минус.","solution":"−7."},
+  {"type":"number","q":"−8 − (−3) = ?","answer":"-5","hint":"−8 + 3.","solution":"−5."}
+]
+    </script>
+  </div>
+</section>
+
+<section class="lesson">
+  <p class="kicker">Урок 4</p>
+  <h2>Умножение знаков</h2>
+  <p>Положительное на положительное — положительное. Это обычная таблица. Положительное на отрицательное — отрицательное: 3 · (−4) = −12. Три раза долг по 4 — долг 12.</p>
+  <p>Отрицательное на отрицательное — положительное. Это самое странное место, и его лучше увидеть на цепочке, а не зазубрить.</p>
+  <div class="steps">
+    <div class="step"><span class="tag">Цепочка</span><p>(−2) · 3 = −6. (−2) · 2 = −4. (−2) · 1 = −2. (−2) · 0 = 0.</p></div>
+    <div class="step"><span class="tag">Дальше влево</span><p>Каждый раз, когда второй множитель уменьшается на 1, ответ увеличивается на 2. После нуля: (−2) · (−1) = 2. (−2) · (−2) = 4.</p></div>
+  </div>
+  <div class="formula">плюс · плюс = плюс<br>минус · плюс = минус<br>минус · минус = плюс</div>
+  <p>Коротко: одинаковые знаки дают плюс, разные — минус. Это про умножение и деление, не про сложение.</p>
+  <div class="check">
+    <h3>Проверь себя</h3>
+    <script type="application/json">
+[
+  {"type":"number","q":"(−5) · 4 = ?","answer":"-20","hint":"Знаки разные.","solution":"−20."},
+  {"type":"number","q":"(−5) · (−4) = ?","answer":"20","hint":"Знаки одинаковые, оба минус.","solution":"20."},
+  {"type":"number","q":"(−3) · 0 = ?","answer":"0","hint":"На ноль умножение даёт ноль при любом знаке.","solution":"0."}
+]
+    </script>
+  </div>
+</section>
+
+<section class="lesson">
+  <p class="kicker">Урок 5</p>
+  <h2>Деление знаков</h2>
+  <p>Знаки при делении работают так же, как при умножении. (−20) : 4 = −5. (−20) : (−4) = 5. Проверка — обратное умножение: (−4) · (−5) = 20, а нам нужно было получить −20? Нет: (−20) : (−4) должно дать 5, и (−4) · 5 = −20. Сошлось.</p>
+  <div class="note watch"><b>На ноль по-прежнему не делят,</b> даже если ноль «отрицательный». Минус нуля не бывает отдельным числом: −0 = 0.</div>
+  <p>Дробь с минусом можно писать тремя способами, это одно число: −(3/4), (−3)/4 и 3/(−4). В ответе обычно минус ставят перед дробью.</p>
+  <div class="check">
+    <h3>Проверь себя</h3>
+    <script type="application/json">
+[
+  {"type":"number","q":"(−18) : 3 = ?","answer":"-6","hint":"18 : 3 = 6, знак минус, потому что знаки разные.","solution":"−6."},
+  {"type":"number","q":"(−18) : (−3) = ?","answer":"6","hint":"Одинаковые знаки.","solution":"6."},
+  {"type":"tf","q":"(−12) : (−4) отрицательно.","answer":false,"hint":"Минус на минус.","solution":"Нет, ответ 3, положительный."}
+]
+    </script>
+  </div>
+</section>
+
+<section class="lesson">
+  <p class="kicker">Урок 6</p>
+  <h2>Порядок действий со знаками</h2>
+  <p>Порядок тот же: скобки, степени, умножение и деление, сложение и вычитание. Знак обрабатывают вместе со своим числом. (−3)² = 9, потому что (−3) · (−3) = 9. А −3² без скобок в школьной записи чаще значит −(3²) = −9. Смотри скобки.</p>
+  <div class="steps">
+    <div class="step"><span class="tag">Пример</span><p>−2 + (−3) · 4.</p></div>
+    <div class="step"><span class="tag">Сначала умножение</span><p>(−3) · 4 = −12.</p></div>
+    <div class="step"><span class="tag">Потом сложение</span><p>−2 + (−12) = −14.</p></div>
+  </div>
+  <div class="check">
+    <h3>Проверь себя</h3>
+    <script type="application/json">
+[
+  {"type":"number","q":"(−4)² = ?","answer":"16","hint":"Минус на минус, и 4 · 4.","solution":"16."},
+  {"type":"number","q":"−2 + (−3) · 4 = ?","answer":"-14","hint":"Сначала умножение.","solution":"−2 + (−12) = −14."},
+  {"type":"number","q":"(−10) : 2 + 3 = ?","answer":"-2","hint":"Сначала деление: −5, потом прибавь 3.","solution":"−5 + 3 = −2."}
+]
+    </script>
+  </div>
+</section>
+
+<section class="lesson">
+  <p class="kicker">Итог темы</p>
+  <h2>Ловушки и большой тест</h2>
+  <div class="trap"><p class="wrong"><span class="lbl">Так неправильно</span>−2 больше, чем −1, «потому что 2 больше 1»</p><p class="right"><span class="lbl">Так правильно</span>−2 левее и меньше</p></div>
+  <div class="trap"><p class="wrong"><span class="lbl">Так неправильно</span>5 − (−2) = 3</p><p class="right"><span class="lbl">Так правильно</span>5 − (−2) = 7</p><p>Минус перед скобкой меняет знак внутри.</p></div>
+  <div class="trap"><p class="wrong"><span class="lbl">Так неправильно</span>(−3) · (−4) = −12</p><p class="right"><span class="lbl">Так правильно</span>(−3) · (−4) = 12</p></div>
+  <details class="parents">
+    <summary>Для родителей</summary>
+    <p>Слова: números enteros, positivo, negativo, signo, opuesto, valor absoluto. Валенсийский: nombres enters, positiu, negatiu, signe, oposat, valor absolut.</p>
+    <p>Термометр и лифт с подземными этажами объясняют сравнение и сложение лучше правил. Умножение знаков лучше не сводить к фразе «минус на минус даёт плюс» без цепочки из урока 4: эта фраза не работает для сложения, и сын начнёт применять её везде.</p>
+  </details>
+  <div class="check" data-mode="step" data-save="final">
+    <h3>Проверь себя: 8 вопросов</h3>
+    <script type="application/json">
+[
+  {"type":"choice","q":"Какое число меньше всех?","options":["−1","0","−8","−3"],"answer":2,"hint":"Самое левое.","solution":"−8."},
+  {"type":"number","q":"(−7) + 10 = ?","answer":"3","hint":"Разные знаки, 10 больше.","solution":"3."},
+  {"type":"number","q":"(−7) + (−10) = ?","answer":"-17","hint":"Одинаковые знаки, модули складываются.","solution":"−17."},
+  {"type":"number","q":"4 − (−9) = ?","answer":"13","hint":"Минус на минус при вычитании.","solution":"4 + 9 = 13."},
+  {"type":"number","q":"(−6) · (−3) = ?","answer":"18","hint":"Одинаковые знаки.","solution":"18."},
+  {"type":"number","q":"(−24) : 8 = ?","answer":"-3","hint":"Знаки разные.","solution":"−3."},
+  {"type":"number","q":"(−2)² = ?","answer":"4","hint":"Скобки есть, минус внутри.","solution":"4."},
+  {"type":"number","q":"−5 + 2 · (−3) = ?","answer":"-11","hint":"Сначала 2 · (−3) = −6.","solution":"−5 + (−6) = −11."}
+]
+    </script>
+  </div>
+</section>
+
+</main>
+<script src="../assets/js/topics.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/quiz.js"></script>
+<script src="../assets/js/lessons.js"></script>
+</body>
+</html>
